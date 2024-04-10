@@ -15,13 +15,15 @@ public class Main {
         ImputManager imputManager = new ImputManager();
         IntDivider intDivider = new IntDivider();
 
-//        while(true) {
-//            System.out.println("Pradedame programa");
-//            Integer x = intDivider.divide(imputManager.askForInput());
-//            if (x != null) System.out.println("Jusu atsakymas yra: " + x);
-//            System.out.println("Ar norite testi? (T/N)");
-//            if(!imputManager.atsakymas()) break;
-//        }
+        while(true) {
+            System.out.println("Pradedame programa");
+            System.out.println();
+            Integer x = intDivider.divide(imputManager.askForInput());
+            if (x != null) System.out.println("Jusu atsakymas yra: " + x);
+            System.out.println("Ar norite testi? (T/N)");
+            if(!imputManager.atsakymas()) break;
+        }
+
 
         /////////////////////////////////////////////////////////
         /////// Uzduotis nr2
@@ -141,7 +143,7 @@ public class Main {
         }
 
         System.out.println();
-        System.out.println("Knygos bibliotekoje: ");
+        System.out.println("Visos knygos bibliotekoje: ");
         System.out.println(biblioteka);
 
 
