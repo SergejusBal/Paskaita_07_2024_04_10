@@ -32,7 +32,7 @@ public class Biblioteka {
            knyga.getAutorius().setPavarde(scanner.nextLine());
            System.out.println("Irasykite knygos leidimo metus");
            int metai = scanner.nextInt();
-            if(metai<1900) throw new KnyguException("Metai turi buti Daugiau nei 1900");
+           if(metai<1900) throw new KnyguException("Metai turi buti Daugiau nei 1900");
            System.out.println("Irasykite knygos leidimo menesi");
            int men = scanner.nextInt();
            if(1<=men && men<=12) throw new KnyguException("Menesis turi buti buo 1 iki 12");
@@ -132,7 +132,7 @@ public class Biblioteka {
     public String toString() {
         String grazu = "";
         for (Knyga k : knyguSarasas) {
-            grazu += "Pavadinimas: " + k.getPavadinimas() + "  Autorius :" + k.getAutorius().getVardas() + " " +k.getAutorius().getPavarde() + "  Leidimo metai: " +  k.getIsleidimoMetai().getYear() + " SkaitytojoId " + k.getSKAITYTOJOID() + "\n";
+            grazu += "Pavadinimas: " + k.getPavadinimas() + "  Autorius :" + k.getAutorius().getVardas() + " " +k.getAutorius().getPavarde() + "  Leidimo metai: " +  k.getIsleidimoMetai().getYear() + "\n";
         }
         return grazu;
     }
